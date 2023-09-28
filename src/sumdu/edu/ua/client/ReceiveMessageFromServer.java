@@ -26,14 +26,6 @@ public class ReceiveMessageFromServer implements Runnable{
             } catch (IOException e){
                 System.err.println("Error reading: " + e.getMessage());
             }
-            finally {
-                try{
-                    in.close();
-                }
-                catch (IOException e){
-                    System.err.println("Error closing: " + e.getMessage());
-                }
-            }
         }
     }
 }
